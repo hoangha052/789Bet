@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="KUBET.VN"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/et_height"
+            android:layout_marginHorizontal="@dimen/horizontal_margin"
+            android:background="@drawable/bg_et">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical|start"
+                android:layout_marginHorizontal="8dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:src="@drawable/ic_main_question"
+                app:tint="@color/colorAccent" />
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="56dp"
+                android:layout_marginEnd="16dp"
+                android:background="@null"
+                android:hint="Tên"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName"
+                android:maxLength="4"
+                android:nextFocusForward="@+id/et_sdt"
+                android:textSize="@dimen/text_size" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/et_height"
+            android:layout_marginHorizontal="@dimen/horizontal_margin"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_et">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical|start"
+                android:layout_marginHorizontal="8dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:src="@drawable/ic_main_question"
+                app:tint="@color/colorAccent" />
+
+            <EditText
+                android:id="@+id/et_sdt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="56dp"
+                android:layout_marginEnd="16dp"
+                android:background="@null"
+                android:hint="Số Điện Thoại"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:textSize="@dimen/text_size" />
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/btn_sign_up"
+            android:layout_width="@dimen/button_action_width"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorPrimary"
+            android:text="Đăng Ký"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size" />
+
+        <Button
+            android:id="@+id/btn_sign_in"
+            android:layout_width="@dimen/button_action_width"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="#FF8400"
+            android:text="Đăng Nhập"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size" />
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_zalo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:src="@drawable/support_zalo_logo"
+        app:backgroundTint="@color/colorAccent"
+        app:maxImageSize="40dp" />
+</FrameLayout>
