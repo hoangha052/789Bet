@@ -96,7 +96,7 @@ class InAppBrowserActivity : AppCompatActivity() {
                 true
             }
             R.id.info -> {
-                val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://zalo.me/lucas8686"))
+                val intent = Intent(Intent.ACTION_VIEW, Uri.parse("http://zalo789.mig8bet.net"))
                 if (intent.resolveActivity(packageManager) != null) {
                     startActivity(intent)
                 }

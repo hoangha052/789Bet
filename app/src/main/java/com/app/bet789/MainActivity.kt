@@ -29,20 +29,20 @@ class MainActivity : AppCompatActivity() {
         supportActionBar?.setDisplayShowTitleEnabled(false)
 
         binding.btnSignIn.setOnClickListener {
-            startActivity(InAppBrowserActivity.getIntent(this, "https://zingnews.vn"))
+            startActivity(InAppBrowserActivity.getIntent(this, "http://dn789.mig8bet.net"))
         }
         binding.btnSignUp.setOnClickListener {
             val phone = binding.etSdt.text.takeIf {
                 it != null && it.trim().length >= 10
             }
             if (phone != null) {
-                startActivity(InAppBrowserActivity.getIntent(this, "https://zingnews.vn"))
+                startActivity(InAppBrowserActivity.getIntent(this, "http://dk789.mig8bet.net"))
             } else {
                 showAlert()
             }
         }
         binding.btnZalo.setOnClickListener {
-            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://zalo.me/lucas8686"))
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("http://zalo789.mig8bet.net"))
             if (intent.resolveActivity(packageManager) != null) {
                 startActivity(intent)
             }
@@ -66,7 +66,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return if (item.itemId == R.id.info) {
-            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://zalo.me/lucas8686"))
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("http://zalo789.mig8bet.net"))
             if (intent.resolveActivity(packageManager) != null) {
                 startActivity(intent)
             }
