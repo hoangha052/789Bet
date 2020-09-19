@@ -20,7 +20,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="KUBET.VN"
+            android:text="789Bet"
             android:textColor="@android:color/white"
             android:textSize="20sp" />
     </androidx.appcompat.widget.Toolbar>
@@ -45,7 +45,7 @@
                 android:layout_marginHorizontal="8dp"
                 android:gravity="center"
                 android:padding="5dp"
-                android:src="@drawable/ic_main_question"
+                app:srcCompat="@drawable/ic_person"
                 app:tint="@color/colorAccent" />
 
             <EditText
@@ -78,7 +78,7 @@
                 android:layout_marginHorizontal="8dp"
                 android:gravity="center"
                 android:padding="5dp"
-                android:src="@drawable/ic_main_question"
+                app:srcCompat="@drawable/ic_phone_contact"
                 app:tint="@color/colorAccent" />
 
             <EditText
