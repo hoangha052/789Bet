@@ -48,6 +48,14 @@ class InAppBrowserActivity : AppCompatActivity() {
             }
             binding.webView.settings.setAppCacheEnabled(true)
             binding.webView.settings.cacheMode = WebSettings.LOAD_DEFAULT
+
+
+            //**enabled dom storage**
+            binding.webView.settings.domStorageEnabled = true
+            //enabling javascript
+            binding.webView.settings.javaScriptCanOpenWindowsAutomatically = true
+            //database enabled
+            binding.webView.settings.databaseEnabled = true
             binding.webView.loadUrl(url)
         }
 

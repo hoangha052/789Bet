@@ -86,7 +86,7 @@
             android:id="@+id/btn_sign_in"
             android:layout_width="@dimen/button_action_width"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="10dp"
             android:background="#FF8400"
             android:text="Đăng Nhập"
             android:textAllCaps="false"
